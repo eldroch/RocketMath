@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rocket Math Game</title>
+    <style>
+        canvas { border: 1px solid black; background-image: url('background.png'); background-size: cover; }
+        #fuelGauge { width: 200px; height: 20px; border: 1px solid #000; }
+        #fuelLevel { height: 100%; background-color: green; width: 100%; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="600" height="900"></canvas>
+    <div id="fuelGauge">
+        <div id="fuelLevel"></div>
+    </div>
+    <div>
+        <span id="mathProblem"></span>
+        <input type="number" id="answerInput" />
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <audio id="boostSound" src="rocket_boost.mp3"></audio>
+
+    <script src="rocketGame.js"></script>
+</body>
+</html>
